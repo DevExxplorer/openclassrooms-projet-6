@@ -1,0 +1,102 @@
+@font-face {
+  font-family: "Oswald";
+  src: url("../assets/fonts/Oswald-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Oswald";
+  src: url("../assets/fonts/Oswald-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Oswald";
+  src: url("../assets/fonts/Oswald-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Oswald";
+  src: url("../assets/fonts/Oswald-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Oswald";
+  src: url("../assets/fonts/Oswald-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Oswald";
+  src: url("../assets/fonts/Oswald-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+h2 {
+  margin: 10px 0;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  color: #000000;
+}
+
+p {
+  font-size: 16px;
+  line-height: 23px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+}
+.btn span {
+  display: flex;
+  align-items: center;
+  padding: 5px 25px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  background-color: #FA0B0B;
+  color: #FFF;
+  border-radius: 25px;
+}
+
+.wrapper {
+  width: 329px;
+  margin: 25px auto;
+}
+.wrapper .section__title {
+  display: flex;
+  justify-content: center;
+  padding: 5px 0;
+  background-color: #61787F;
+  border: 1px #000000 solid;
+}
+.wrapper .section__title img {
+  width: 182px;
+  max-width: 100%;
+}
+.wrapper .section__best-movie {
+  padding: 10px 0;
+}
+.wrapper .section__best-movie__content {
+  margin: 20px 0;
+  padding: 10px;
+  border: 6px #000000 solid;
+}
+.wrapper .section__best-movie__content img {
+  width: 100%;
+}
+.wrapper .section__best-movie__content h2 {
+  text-align: left;
+}
+
+/*# sourceMappingURL=style.css.map */

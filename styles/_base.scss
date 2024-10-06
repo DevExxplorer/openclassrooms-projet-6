@@ -1,0 +1,35 @@
+h2 {
+  margin: 10px 0;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1;
+  font-family: $main-font;
+  text-align: center;
+  color: $black;
+}
+
+p {
+  font-size: 16px;
+  line-height: 23px;
+  font-family: $main-font;
+  font-weight: 200;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+
+  span {
+    display: flex;
+    align-items: center;
+    padding: 5px 25px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    font-family: $main-font;
+    background-color: $orange;
+    color: $white;
+    border-radius: 25px;
+  }
+}
