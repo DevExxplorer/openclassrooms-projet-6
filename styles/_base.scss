@@ -1,11 +1,36 @@
+h1 {
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: 300;
+  font-family: $main-font;
+  color: $white;
+}
+
 h2 {
   margin: 10px 0;
   font-size: 32px;
   font-weight: 600;
-  line-height: 1;
+  line-height: 47.42px;
   font-family: $main-font;
-  text-align: center;
   color: $black;
+
+  @include size-md {
+    font-size: 40px;
+    line-height: 59.28px;
+  }
+
+  @include size-lg {
+    font-size: 44px;
+    line-height: 71.14px;
+  }
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 35px;
+  font-family: $main-font;
+  color: $white;
 }
 
 p {
@@ -13,6 +38,16 @@ p {
   line-height: 23px;
   font-family: $main-font;
   font-weight: 200;
+
+  @include size-md {
+    font-size: 24px;
+    line-height: 35.57px;
+  }
+
+  @include size-lg {
+    font-size: 28px;
+    line-height: 41.5px;
+  }
 }
 
 .btn {
@@ -28,8 +63,24 @@ p {
     line-height: 20px;
     font-weight: 500;
     font-family: $main-font;
-    background-color: $orange;
     color: $white;
     border-radius: 25px;
+  }
+
+  &__darkgrey {
+    background-color: $darkgrey;
+  }
+
+  &__orange {
+    background-color: $orange;
+  }
+}
+
+ul {
+  li {
+    font-size: 36px;
+    line-height: 53.35px;
+    font-weight: 600;
+    font-family: $main-font;
   }
 }

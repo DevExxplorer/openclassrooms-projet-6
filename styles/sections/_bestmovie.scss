@@ -1,0 +1,65 @@
+.section__best-movie {
+  padding: 10px 0;
+
+  h2 {
+    text-align: center;
+
+    @include size-md {
+      text-align: left;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    padding: 10px;
+    border: 6px $black solid;
+
+    @include size-md {
+      flex-direction: row;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+
+      @include size-md {
+        width: 168px;
+      }
+
+      @include size-lg {
+        width: 227px;
+      }
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      @include size-md {
+        justify-content: space-between;
+        padding: 0 20px 0 30px;
+      }
+
+      .text {
+        h2 {
+          text-align: left;
+        }
+      }
+
+      .btn {
+        justify-content: center;
+
+        @include size-md {
+          justify-content: end;
+        }
+
+        @include size-lg {
+          padding-bottom: 20px;
+        }
+      }
+    }
+  }
+}
