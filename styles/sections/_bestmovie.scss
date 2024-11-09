@@ -50,14 +50,12 @@
       }
 
       .btn {
+        margin-top: 20px;
         justify-content: center;
 
         @include size-md {
+          margin-top: 0;
           justify-content: end;
-        }
-
-        @include size-lg {
-          padding-bottom: 20px;
         }
       }
     }

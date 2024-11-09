@@ -5,6 +5,13 @@
 @import "sections/title";
 @import "sections/bestmovie";
 @import "sections/categories";
+@import "sections/modal";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .wrapper {
   position: relative;
@@ -13,31 +20,6 @@
 
   @include size-md {
     margin: 50px auto;
-  }
-
-  .modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-    background-color: white;
-
-    &__content {
-      position: relative;
-      width: 100%;
-      height: 100%;
-
-      .modal-close {
-        position: absolute;
-        top: 15px;
-        right: 0;
-        width: 32px;
-        height: 32px;
-      }
-    }
   }
 
   .section {

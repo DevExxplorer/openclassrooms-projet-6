@@ -1,0 +1,149 @@
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: white;
+  overflow: auto;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 50px;
+
+    .section-top {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 50px;
+
+      @include size-md {
+        padding-bottom: 0;
+      }
+
+      &__infos {
+        display: flex;
+        justify-content: space-between;
+
+        &__title {
+          display: flex;
+          flex-direction: column;
+
+          span {
+            font-size: 24px;
+            line-height: 32px;
+            font-family: $main-font;
+            font-weight: 600;
+          }
+
+          .directors {
+            display: flex;
+            flex-direction: column;
+            margin-top: 40px;
+            margin-bottom: 20px;
+
+            @include size-md {
+              margin-bottom: 0;
+            }
+
+            span {
+              &:first-child {
+                font-weight: 400;
+              }
+              &:last-child {
+                font-weight: 300;
+              }
+            }
+          }
+        }
+
+        &__image {
+          display: none;
+
+          @include size-md {
+            display: block;
+          }
+
+          img {
+            height: 334px;
+          }
+        }
+
+        .modal-close {
+          @include size-md {
+            display: none;
+          }
+        }
+      }
+
+
+      &__description {
+        @include size-md {
+          margin-top: 20px;
+        }
+
+        p {
+          font-size: 24px;
+          line-height: 32px;
+          font-family: $main-font;
+          font-weight: 300;
+        }
+
+        &__image {
+          img {
+            margin: 20px 0;
+            width: 100%;
+            height: auto;
+
+            @include size-md {
+              display: none;
+            }
+          }
+        }
+        .actors {
+          display: flex;
+          flex-direction: column;
+
+          @include size-md {
+            margin-top: 20px;
+          }
+
+          span {
+            font-size: 20px;
+            line-height: 28px;
+            font-family: $main-font;
+            font-weight: 600;
+
+            &:first-child {
+              margin-bottom: 5px;
+              font-weight: 400;
+            }
+            &:last-child {
+              font-weight: 300;
+            }
+          }
+        }
+      }
+    }
+
+    .section-bottom {
+      display: none;
+      margin-top: 50px;
+
+      @include size-md {
+        display: block;
+      }
+
+      .btn {
+        width: 214px;
+        margin: 0 auto;
+        background-color: $orange;
+        border-radius: 25px;
+      }
+    }
+  }
+}
